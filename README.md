@@ -23,3 +23,11 @@ Run this command to preview the site
 ```
 python -m http.server -d foldername
 ```
+
+## Troubleshooting
+
+Sometimes you need to allow other domains:
+
+```
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent --span-hosts --domains=example.com,example2.com https://example.com/path/to/foldername/
+```
